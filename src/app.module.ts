@@ -10,7 +10,13 @@ import { CategoryModule } from './model/category/category.module';
 import { PurchaseModule } from './model/purchase/purchase.module';
 
 @Module({
-  imports: [UserModule, PrismaModule, ProductModule, CategoryModule, PurchaseModule],
+  imports: [
+    UserModule,
+    PrismaModule,
+    ProductModule,
+    CategoryModule,
+    PurchaseModule,
+  ],
   controllers: [AppController],
   providers: [AppService, PrismaService, UserService],
 })
